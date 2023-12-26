@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreenActivity"
+    android:background="@drawable/background_color"
+    >
+    <ImageView
+        android:id="@+id/bluetooth_icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/blutooth_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </ImageView>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/connect_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:textColor="@color/white"
+
+        app:layout_constraintTop_toBottomOf="@+id/bluetooth_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25sp">
+
+    </com.google.android.material.textview.MaterialTextView>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to any bluetooth device near you"
+        android:layout_below="@+id/connect_text"
+        android:textColor="@color/white"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/connect_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/turnOnBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn On"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        app:strokeWidth="1pt"
+        app:strokeColor="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/description_text"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/description_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        >
+
+    </com.google.android.material.button.MaterialButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
